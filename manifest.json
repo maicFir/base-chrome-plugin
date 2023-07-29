@@ -1,0 +1,59 @@
+{
+    "name": "base chrome plugin chrome",
+    "description": "a simple chrome plugin",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "assets/imgs/icon.png",
+        "default_title": "demo chrome plugin",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "./src/background/index.js",
+        "type": "module"
+    },
+    "icons":
+	{
+		"16": "assets/imgs/icon.png"
+	},
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "exclude_matches": [
+               "http://localhost:8080/*"
+            ],
+            "js": [
+                "src/content/index.js"
+            ],
+            "css": [
+                "assets/css/index.css"
+            ],
+            
+            "run_at": "document_end",
+            "all_frames": false
+        }
+    ],
+
+    "host_permissions": [
+    
+    ],
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "notifications",
+        "webRequest",
+        "activeTab"
+    ],
+    "omnibox": { "keyword" : "demo" },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y"
+            },
+            "description": "Opens tabs.html"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "base-chrome-plugin",
+  "version": "1.0.0",
+  "description": "base chrome plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --env mode=development",
+    "build:local": "webpack --env mode=local --progress",
+    "build:development": "webpack --env mode=development --progress",
+    "build:test": "webpack --env mode=test --progress",
+    "build": "webpack --env mode=production --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack5",
+    "chrome plugin"
+  ],
+  "author": "maicFir",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "clsx": "^1.2.1",
+    "dayjs": "^1.11.9",
+    "postcss-import": "^15.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@types/chrome": "^0.0.239",
+    "@types/node": "20.2.4",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^8.0.1",
+    "fs": "0.0.1-security",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.24",
+    "postcss-js": "^4.0.1",
+    "postcss-loader": "^7.0.1",
+    "postcss-nested": "^6.0.1",
+    "prettier": "2.8.8",
+    "sass": "^1.63.6",
+    "sass-loader": "^11.0.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.3.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "5.0.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
