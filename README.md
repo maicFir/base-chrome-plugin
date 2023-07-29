@@ -6,7 +6,7 @@
 
 - 🔥 `webpack5`、`webpack-cli`,`webpack-dev-server`
 - 🔥 `react`, `react-router`,`typescript`
-- 🔥`babel`,`typescript`、`twilwindcss`, `sass`
+- 🔥`babel`,`typescript`、`tailwindcss`, `sass`
 - ...
 
 ### 如何运行
@@ -73,6 +73,9 @@ pnpm run build
 
 ![](https://files.mdnice.com/user/24614/214d8805-afa2-4c24-9e0a-dafa3289323c.png)
 
+![](https://files.mdnice.com/user/24614/214d8805-afa2-4c24-9e0a-dafa3289323c.png)
+
 ### 最后
 
-- 如果看完觉得有所有收获或者有所帮助，就不要吝啬给个`star`鼓励下作者吧~
+- 如果看完项目，觉得有所有收获或有所帮助，就不要吝啬给个`star`鼓励下作者吧~
+  ![](https://files.mdnice.com/user/24614/1dacc796-7728-42f2-8e5c-918faaed1958.png)
