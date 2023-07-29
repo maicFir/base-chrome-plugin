@@ -73,7 +73,7 @@ pnpm run build
 
 ![](https://files.mdnice.com/user/24614/214d8805-afa2-4c24-9e0a-dafa3289323c.png)
 
-![](https://files.mdnice.com/user/24614/214d8805-afa2-4c24-9e0a-dafa3289323c.png)
+![](https://files.mdnice.com/user/24614/920c1bc4-b602-4a0c-b178-c376a1161bb3.png)
 
 ### 最后
 
