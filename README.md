@@ -66,7 +66,7 @@ pnpm run build
 ```bash
   npm run build
   // or
-  pnpm run build`
+  pnpm run build
 ```
 
 ### 插件预览
@@ -77,5 +77,5 @@ pnpm run build
 
 ### 最后
 
-- 如果看完项目，觉得有所有收获或有所帮助，就不要吝啬给个`star`鼓励下作者吧~
+- 如果看完项目，觉得有所收获或帮助，就不要吝啬给个`star`鼓励下作者吧~
   ![](https://files.mdnice.com/user/24614/1dacc796-7728-42f2-8e5c-918faaed1958.png)
