@@ -1,0 +1,17 @@
+$width: 100px;
+$height: 30px;
+
+.set-app {
+  :global {
+    .tag-common {
+      display: inline-block;
+      width: $width;
+      height: $height;
+    }
+    .tag-wrap {
+      span {
+        @extend .tag-common;
+      }
+    }
+  }
+}
