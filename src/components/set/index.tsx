@@ -32,6 +32,17 @@ const Index: React.FC<Props> = (props) => {
           </span>
         ))}
       </div>
+      <h1>color</h1>
+      <div className="public-name">
+        <p className="name1">公众号：Web技术学苑</p>
+        <p className="name2">公众号：Web技术学苑</p>
+      </div>
+      <h1>warn</h1>
+      <div className="warn-app">
+        <p className="warn">warn</p>
+        <p className="success">success</p>
+        <p className="error">error</p>
+      </div>
     </div>
   );
 };

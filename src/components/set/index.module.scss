@@ -1,16 +1,90 @@
+@use "sass:math";
+@import "./color.scss";
 $width: 100px;
 $height: 30px;
+$tagWrap: "tag-wrap";
+
+@mixin tagStyle($selector, $textColor, $bgColor) {
+  .#{$selector} {
+    color: $textColor;
+    background-color: $bgColor;
+  }
+}
+@mixin setColor($class) {
+  @if ($class == "success") {
+    color: green;
+    border: 1px solid green;
+  }
+  @if ($class == "error") {
+    color: red;
+    border: 1px solid red;
+  }
+  @if ($class == "warn") {
+    color: orange;
+    border: 1px solid orange;
+  }
+}
+@function setWith($width) {
+  @return $width + 30px;
+}
 
 .set-app {
   :global {
     .tag-common {
       display: inline-block;
-      width: $width;
-      height: $height;
+      width: math.div($width, 2);
+      height: $height + 20px;
     }
-    .tag-wrap {
+    .btn-item {
+      width: setWith($width);
+      height: $height;
+      text-align: center;
+    }
+
+    // .#{$tagWrap} {
+    //   span {
+    //     @extend .tag-common;
+    //   }
+    //   @each $tagName, $textColor, $bgColor in ("tag1", red, #bf6b97),
+    //     ("tag2", pink, #3070b4), ("tag3", blue, #f5f5f5)
+    //   {
+    //     .#{$tagName} {
+    //       color: $textColor;
+    //       background-color: $bgColor;
+    //     }
+    //   }
+    // }
+
+    .#{$tagWrap} {
       span {
         @extend .tag-common;
+      }
+      @each $tagName, $textColor, $bgColor in ("tag1", red, #bf6b97),
+        ("tag2", pink, #3070b4), ("tag3", blue, #f5f5f5)
+      {
+        @include tagStyle($tagName, $textColor, $bgColor);
+      }
+    }
+
+    .public-name .name1 {
+      @extend %name1;
+    }
+    .public-name .name2 {
+      @extend %name2;
+    }
+    .warn-app {
+      display: flex;
+      p {
+        @extend .btn-item;
+        &.warn {
+          @include setColor("warn");
+        }
+        &.success {
+          @include setColor("success");
+        }
+        &.error {
+          @include setColor("error");
+        }
       }
     }
   }
